@@ -12,7 +12,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: 'app.js',
-    publicPath: '/'
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -20,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.tsx?$/, loader: 'ts-loader' },
-      { test: /\.(png|jpe?g|gif)$/i, loader: 'file-loader' },
+      { test: /\.(png|jpe?g|gif)$/i, type: 'asset/resource' },
       { test: /\.codegen$/i, loader: 'parcel-codegen-loader' },
     ],
   },

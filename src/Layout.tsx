@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-const Layout: React.FC = ({ children }) => (
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div>
     <div>
       <ul>
